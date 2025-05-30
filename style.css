@@ -1,0 +1,515 @@
+h1{
+   color:#454a4a;
+   font-size:50px;
+}
+.title{
+    text-align: center;
+}
+.butan-list{
+    list-style:none;
+    padding: 25px;
+    margin: 25px;
+    display:flex;
+    gap: 80px;
+    font-size:20px;
+    flex-wrap: wrap; /* 画面幅が狭い時は折り返し */
+  justify-content:center; /* 中央寄せ（必要なら） */
+}
+
+/*1 ボタン*/
+.button-1{
+    background:#d6f8ff;
+    border-radius:5px;
+    position: relative;
+    align-items:center;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 60px;
+    color:#6e3325;
+    text-decoration:none;
+    transition: 0.5s ease-in-out;
+}
+.button-1:hover{
+    background:#6e3325;
+    color:#d6f8ff;
+}
+.button-1:after{
+    content:'';
+    width:6px;
+    height:6px;
+    border-top:2px solid#6e3325;
+    border-right:2px solid#6e3325;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button-1:hover:after{
+    border-color:#d6f8ff;
+}
+/*２個目　ボタン*/
+.button-2{
+    display:inline-block;
+    text-align:center;
+    vertical-align:middle;
+    text-decoration:none;
+    padding:10px 60px;
+    background:linear-gradient(to top,#f5a467,#f58f42);
+    color:#fff;
+    box-shadow:0 2px 4px rgba(243, 207, 157, 0.3);
+    -webkit-box-shadow:0 2px 4px rgba(243, 207, 157, 0.3);
+    transition:0.5s;
+}
+.button-2:hover{
+    color:#fff;
+    opacity:0.7;
+}
+/*３個目　ボタン*/
+.button-3{
+    position:relative;
+    display:inline-block;
+    padding:10px 60px;
+    color:#fff;
+    transition: 0.5s ease-in-out;
+    background:#d57e7e;
+    filter:drop-shadow(0px 2px 5px #f4f2f2);
+    text-decoration:none;
+}
+.button-3:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(90, 90, 90, 0.15), 0 0 5px rgba(89, 88, 88, 0.1);
+}
+
+/*4 ボタン*/
+
+.button-4{
+    position:relative;
+    display:inline-block;
+    width:300px;
+    text-align:center;
+    text-decoration:none;
+    background:linear-gradient(to right,#295e0c,#5ad119);
+    background-position:0% 50%;
+    background-size:200% auto;
+    line-height:50px;
+    outline:none;
+    color:#fff;
+    transition:all 0.5s ease-out;
+}
+.button-4:hover{
+    color:#fff;
+    background-position:100% 50%;
+}
+
+/*5　ボタン*/
+.button-5{
+    position:relative;
+    display:inline-block;
+    align-items:center;
+    margin: 0 auto;
+    padding:10px 60px;
+    color:#664735;
+    transition:0.5s ease-in-out;
+    background:#dbb8ce;
+    overflow:hidden;
+    text-decoration: none;
+}
+.button-5:before{
+    position:absolute;
+    top:0;
+    left:0;
+    width:150%;
+    height:500%;
+    content: "";
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    background:#8a637b;
+    opacity: 0.3;
+}
+.button-5:hover:before{
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+/*6 ボタン*/
+.button-6{
+    display:inline-block;
+    position:relative;
+    color:#f01f42;
+    padding: 10px 60px;
+    text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.button-6:before,
+.button-6:after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background:#f01f42;
+}
+
+.button-6:before{
+    top:0;
+    left:0;
+}
+.button-6:after{
+    right:0;
+    bottom:0;
+}
+.button-6:hover:before,
+.button-6:hover:after{
+    width:0;
+}
+
+/*7　ボタン*/
+.button-7{
+    background:#faf0dc;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 190px;
+    height:70%;
+    padding: 10px 60px;
+    color:#624c25;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+}
+.button-7:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #ecb847;
+  transition: 0.3s;
+}
+
+.button-7:after{
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+.button-7:hover:before{
+    top:0;
+    left:0;
+}
+.button-7:hover{
+    text-decoration: none;
+  background-color: #e2b470;
+
+}
+
+/*8　ボタン*/
+
+.button-8{
+    background:#968180;
+    border-radius: 3px;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 60px;
+    color: #f5a8a4;
+    text-decoration: none;
+    height:70%;
+    transition: 0.5s ease-in-out;
+}
+
+.button-8:hover{
+    background:#f5a8a4;
+    color:#968180;
+}
+.button-8:after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #f5a8a4;
+    border-right: 2px solid #f5a8a4;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button-8:hover:after{
+    border-color:#968180;
+    right:20px;
+}
+
+/*9　ボタン*/
+.button-9{
+    position:relative;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    margin:center;
+    width: 190px;
+    padding: 10px 60px;
+    color: #37693e;
+    transition: 0.3s ease-in-out;
+    font-weight:100px;
+    background: #addec6;
+    text-decoration: none;
+    border-radius:9px;
+}
+.button-9:hover{
+    background:#8bcd9c;
+    color: #fff;
+}
+.button-9:before,.button-9:after{
+  box-sizing: inherit;
+  content: "";
+  position:absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+  border-radius:9px;
+}
+.button-9:before{
+    top:0;
+    right:0;
+}
+.button-9:after{
+    bottom:0;
+    height:100%;
+}
+.button-9:hover:before,.button-9:hover:after{
+    width:100%;
+    height:120%;
+}
+.button-9:hover:before{
+    border-top-color: #fff;
+  border-right-color: #fff;
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+.button-9:hover:after{
+    border-bottom-color: #fff;
+  border-left-color: #fff;
+  transition:border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s, height 0.15s ease-out 0.3s;
+}
+
+/*10　ボタン*/
+
+.button-10{
+    position:relative;
+    display: inline-block;
+    padding: 10px 10px 10px 60px;
+    color: #130250;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    font-size: 20px;
+}
+.button-10:before,.button-10:after{
+    content:"";
+    position:absolute;
+    display:block;
+    top:50%;
+}
+.button-10:before{
+  width:10px;
+  height: 10px;
+  left: 18px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  z-index: 2;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.5s;
+}
+.button-10:after{
+  left: 0;
+  right:auto;
+  background:#281eb2;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.button-10 span{
+  position: relative;
+  transition: all 0.3s;
+  z-index: 3;
+  opacity:0.7;
+}
+.button-10:hover span{
+    color:#fff;
+}
+.button-10:hover:before{
+    left:1rem;
+}
+.button-10:hover:after{
+    right:auto;
+    left: 1px;
+    width:100%; 
+}
+
+/*11　ボタン*/
+.button-11{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 50px;
+  box-sizing: border-box;
+  background: #decbe8;
+  position: relative;
+  border-radius:5px;
+}
+.button-11 span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #dd90d3;
+  box-sizing: border-box;
+  color: #780b76;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0px 5px 12px #dfb6f5, -6px -6px 12px #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  transition-duration: 0.3s;
+}
+.button-11:hover span{
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 5px #dfb6f5, -2px -2px 5px #FFF;
+}
+
+/*12 ボタン*/
+.button-12{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 290px;
+    padding: 10px 60px;
+    color: #13707b;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #c8f4f8;
+    border-radius: 50px;
+    border: 0.2rem solid #13707b;
+    box-shadow: 0.2rem 0.2rem 0px 0.1rem #929c9d;
+    text-decoration: none;
+}
+.button-12:hover{
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.button-12:after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #13707b;
+    border-right: 3px solid #13707b;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+/*13　ボタン*/
+.button-13{
+    display: block;
+    text-align: center;
+	text-decoration: none;
+	width: 190px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #e66565 0%, #c064d2 100%);
+	border-radius: 100vh;
+	color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: 0.5s;
+    font-size:20px;
+}
+.button-13:hover{
+    color:#fff;
+    background-image: linear-gradient(to left, #dfbde6 0%, #f58484 100%);
+}
+/*14　ボタン*/
+.button-14{
+    display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 190px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #6aecda;
+	color: #7fcbb3;
+	cursor: pointer;
+	position: relative;
+ 	overflow: hidden;
+ 	z-index: 1;
+}
+.button-14:before{
+    content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color:#fb3d6f;
+	transform: translateX(-100%);
+	transition: all .3s;
+	z-index: -1;
+}
+.button-14:before{
+    transform: translateX(0);
+}
+.button-14:hover{
+    color:#ffffff;
+}
+/*15　ボタン*/
+.button-15{
+    text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 190px;
+	margin: auto;
+	padding: 1rem 4rem;
+	border-radius: 100vw;
+	color: #fff;
+	background: #ff760e;
+}
+.button-15:hover{
+    background-position: right center;
+	background-size: 200% auto;
+	-webkit-animation: pulse 3s infinite;
+	animation: shad26 2s infinite;
+	color: #fff;
+}
+@keyframes shad26 {
+	0% {box-shadow: 0 0 0 0 #ff760e;}
+    50% {box-shadow: 0 0 0 8px rgb(39 172 217 / 0%);}
+	100% {box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);}
+}
